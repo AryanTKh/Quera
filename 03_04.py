@@ -1,3 +1,5 @@
+# code is already clean
+
 def fspace(input_text):
     words = filter(None, input_text.split(' '))
     rd = ' '.join(words)
