@@ -1,3 +1,5 @@
+# code is already clean
+
 str_input=input()
 str_input=str_input.split()
 dic={}
