@@ -1,3 +1,5 @@
+# code is already clean
+
 class Soldier:
     def __init__(self, soldier_id, soldier_type, health, x, y):
         self.soldier_id = soldier_id
