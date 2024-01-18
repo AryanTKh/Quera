@@ -1,4 +1,5 @@
 try:
+    
     name = list(input().split())
 
     health = list( map(int , input().split()))
@@ -15,12 +16,13 @@ try:
     for i in range(3):
         m = card[i][0]
         if m == "A":
-            dmg1 += damage[0]
+            dmg1 += damage[0]        
         if m == "B":
             dmg1 += damage[1]
         if m == "C":
             dmg1 += damage[2]
 
+    
     for i in range(3):
         m = card[i][1]
         if m == "A":
@@ -29,6 +31,7 @@ try:
             dmg2 += damage[1]
         if m == "C":
             dmg2 += damage[2]
+            
     A = damage[0]
     B = damage[1]
     C = damage[2]
@@ -40,6 +43,7 @@ try:
                     scr1 += 1
                 if B > A:
                     scr2 += 1
+                    
             if card[i][1] == "C":
                 if A > C:
                     scr1 += 1
@@ -52,6 +56,7 @@ try:
                     scr1 += 1
                 if B < A:
                     scr2 += 1
+                    
             if card[i][1] == "C":
                 if B > C:
                     scr1 += 1
@@ -64,6 +69,7 @@ try:
                     scr1 += 1
                 if B > C:
                     scr2 += 1
+                    
             if card[i][1] == "A":
                 if C > A:
                     scr1 += 1
@@ -75,6 +81,7 @@ try:
 
     print(name[0], " -> Score: ", scr1, ", Health: ", health[0], sep='')
     print(name[1], " ->", " Score: ", scr2, ", Health: ", health[1], sep='')
+
 
 except:
     print("Invalid Command." );
