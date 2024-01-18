@@ -14,9 +14,8 @@ class MrKrabs:
             if dna[i] == dna[i+1] == 't':
                 dna = dna[:i] + 'o' + dna[i+2:]
                 i -=2
-
             i += 1
-
+            
         return dna
 
 class SpongeBob:
@@ -25,7 +24,6 @@ class SpongeBob:
 
     def process_dna(self):
         if self.data.startswith('sb'):
-            # Sort the string using merge sort and return it.
             sorted_data = self.merge_sort( list( str(len(self.data)+10)) )
             m=''
             for i in range(len(sorted_data)):
@@ -85,10 +83,8 @@ class Squidward:
                 dna = dna[:i] + '(0_0)' + dna[i+3:]
 
                 i -= 2
-########################
             if dna[i] == 'x':
                 mm = str(len(dna)-i-4)
-#########################
             i += 1
 
         dna += mm
@@ -102,7 +98,6 @@ def handle_input(input_data):
     else:
         processed_data = input_data[::-1]
 
-
     if processed_data.startswith('m'):
         return MrKrabs(processed_data).process_dna()
     elif processed_data.startswith('sb'):
@@ -114,19 +109,6 @@ def handle_input(input_data):
 
 a=input()
 print(handle_input(a))
-
-
-
-
-#5
-#sbjkfvjkfvkjfkvvkfvjkklfvjkflvbklgbkglbjkblgkflfroforkkfokorfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpmrfokokfkrokfrorkpfkrpokforkorfokprfokrfokpm
-#299
-
-#6
-#kflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkflfklklkbvkglkbglkkbllgkklbgklbkglkblkgbs
-#128
-
-
 
 
 
