@@ -1,5 +1,8 @@
+# code is already clean
+
 n=int(input())
 lst=[]
+
 for i in range(n):
     mail=input()
     for str in mail :
@@ -12,4 +15,3 @@ final_list = sorted(list(set(lst)))
 
 for char in final_list:
     print(char)
-
