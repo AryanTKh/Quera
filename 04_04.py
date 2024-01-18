@@ -41,10 +41,9 @@ class DoctorAppointmentSystem:
         patient_visit_times = [visit["beginning_time"] for visit in self.visits.values() if visit["patient_id"] == id]
         if beginning_time in patient_visit_times:
             return "error: patient already has a visit at this time"
-        self.visits[len(self.visits) + 1] = {
-            "beginning_time": beginning_time,
-            "patient_id": id
-        }
+        self.visits[len(self.visits) + 1] = 
+            { "beginning_time" : beginning_time,
+              "patient_id" : id }
         return "visit added successfully!"
 
     def delete_patient(self, id):
@@ -61,6 +60,7 @@ class DoctorAppointmentSystem:
             patient = self.patients[visit["patient_id"]]
             visit_time = str(visit['beginning_time']).zfill(1)
             schedule.append(f"{visit_time}:00 {patient.name} {patient.family_name}")
+            
         return "SCHEDULE:\n" + "\n".join(schedule)
 
     def process_command(self, command):
