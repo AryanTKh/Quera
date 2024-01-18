@@ -1,4 +1,5 @@
 import math
+
 type=input()
 x=[]
 while 1:
@@ -11,12 +12,9 @@ while 1:
         except ValueError:
             print("Invalid command")
 
-
-###################  SUM
 if type=="sum":
     print(sum(x))
 
-###################  AVERAGE
 if type == "average":
     m=sum(x)
     b=len(x)
@@ -24,7 +22,6 @@ if type == "average":
     avg = round(avg, 2)
     print(avg)
 
-###################  LCD
 if type == "lcd":
     tt=True
     for p in x:
@@ -38,7 +35,6 @@ if type == "lcd":
     else:
         print("Invalid command")
 
-###################  GCD
 if type == "gcd":
     ttt=True
     for p in x:
@@ -52,10 +48,8 @@ if type == "gcd":
     else:
         print("Invalid command")
 
-###################  MIN
 if type == "min":
     print(min(x))
 
-###################  MAX
 if type == "max":
     print(max(x))
