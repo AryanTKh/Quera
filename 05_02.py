@@ -1,6 +1,5 @@
 import re
 
-
 class User:
     def __init__(self, type, id, name, password):
         self.type = type
@@ -9,7 +8,6 @@ class User:
         self.password = password
         self.courses = []
 
-
 class Course:
     def __init__(self, id, name, capacity):
         self.id = id
@@ -17,11 +15,9 @@ class Course:
         self.capacity = capacity
         self.students = 0
 
-
 courses = []
 users = []
 current_student = None
-
 
 def print_courses():
     print('course list:')
@@ -72,7 +68,6 @@ def student_menu(student):
 
         else:
             print('invalid command')
-
 
 def professor_menu():
     print('entered professor menu')
@@ -141,7 +136,6 @@ def is_valid_password(password):
     j = password.count(')')
 
     return sum([a, b, c, d, e, f, g, h, i, j]) != 0
-
 
 def login_signup_menu():
     while True:
@@ -213,10 +207,8 @@ def login_signup_menu():
         else:
             print('invalid command')
 
-
 def main():
     login_signup_menu()
-
 
 if __name__ == "__main__":
     main()
