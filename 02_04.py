@@ -1,12 +1,11 @@
 n = int(input())
 matrix = [[0 for _ in range(n)] for _ in range(100)]
-# for row in matrix:
-#     print(row)
 matrix[0][0] = 1
 
 i = 0
 j = 0
 b = False
+
 while(True):
     newinput = input()
     if(newinput == "END"):
@@ -21,7 +20,6 @@ while(True):
     if (newinput == "B"):
         i += 1
     matrix[i][j] = 1
-
 
 if(j == n-1):
     b = True
